@@ -1,18 +1,18 @@
 #include <iostream>
 using namespace std;
 
-class teacher
+class Teacher
 {
 public:
     string name;
     int age;
-    teacher()
+    Teacher()
     {
         cout << "parent constructor...\n";
     }
 };
 
-class student : public teacher
+class Student : public Teacher
 {
 public:
     int roll;
@@ -23,14 +23,14 @@ public:
         cout << "age: " << age << endl;
         cout << "roll: " << roll << endl;
     }
-    student()
+    Student()
     {
         cout << "child constructor...\n";
     }
 };
 int main()
 {
-    student s1;
+    Student s1;
     s1.name = "Prasanta";
     s1.age = 24;
     s1.roll = 101;

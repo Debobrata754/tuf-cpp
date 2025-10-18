@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class print
+class Print
 {
 public:
     void show(int x)
@@ -16,7 +16,7 @@ public:
 
 int main()
 {
-    print p1;
+    Print p1;
     p1.show(5);
     return 0;
 }

@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class student
+class Student
 {
 public:
     string name;
@@ -18,11 +18,11 @@ public:
 
 int main()
 {
-    student s1;
+    Student s1;
     s1.name = "Debobrata Paul";
     s1.cgpa = 8.5;
     s1.dept = "Computer Science";
-    student s2(s1); // custom copy constructor -invoke
+    Student s2(s1); // custom copy constructor -invoke
     s2.getInfo();
     return 0;
 }

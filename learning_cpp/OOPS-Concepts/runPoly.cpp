@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class parent
+class Parent
 {
 public:
     void getInfo()
@@ -9,7 +9,7 @@ public:
         cout << "parent class..\n";
     }
 };
-class child
+class Child
 {
 public:
     void getInfo()
@@ -19,9 +19,9 @@ public:
 };
 int main()
 {
-    parent p1;
+    Parent p1;
     p1.getInfo();
-    child c1;
+    Child c1;
     c1.getInfo();
     return 0;
 }

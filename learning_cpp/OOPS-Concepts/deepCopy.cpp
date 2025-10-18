@@ -1,20 +1,20 @@
 #include <iostream>
 using namespace std;
 
-class student
+class Student
 {
 public:
     string name;
     double *cgpaPtr;
 
-    student(string name, double cgpa)
+    Student(string name, double cgpa)
     {
         this->name = name;
         cgpaPtr = new double;
         *cgpaPtr = cgpa;
     }
 
-    student(student &obj)
+    Student(Student &obj)
     {
         this->name = obj.name;
         cgpaPtr = new double;    // allocate new memory
@@ -30,9 +30,9 @@ public:
 
 int main()
 {
-    student s1("Debobrata Paul", 8.5);
+    Student s1("Debobrata Paul", 8.5);
     s1.getInfo();
-    student s2(s1); // custom copy constructor -invoke
+    Student s2(s1); // custom copy constructor -invoke
     s2.name = "Debobrata Dutta";
     *(s2.cgpaPtr) = 9.0; // modifying cgpa of s2
     s2.getInfo();

@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-class shape
+class Shape
 { // abstract class because it contains at least one pure virtual function.
 public:
     virtual void draw() = 0; // pure virtual function means that the derived class must implement this function.
 };
 
-class circle : public shape
+class Circle : public Shape
 {
 public:
     void draw()
@@ -17,7 +17,7 @@ public:
 };
 int main()
 {
-    circle c1;
+    Circle c1;
     c1.draw();
     return 0;
 }

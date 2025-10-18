@@ -1,20 +1,20 @@
 #include <iostream>
 using namespace std;
 
-class student
+class Student
 {
 public:
     string name;
     double *cgpaPtr;
 
-    student(string name, double cgpa)
+    Student(string name, double cgpa)
     {
         this->name = name;
         cgpaPtr = new double;
         *cgpaPtr = cgpa;
     }
     // destructor
-    ~student()
+    ~Student()
     {
         cout << "Hi, I delete everything." << endl;
         delete cgpaPtr;
@@ -28,7 +28,7 @@ public:
 
 int main()
 {
-    student s1("Debobrata Paul", 8.5);
+    Student s1("Debobrata Paul", 8.5);
     s1.getInfo();
     return 0;
 }
